@@ -11,7 +11,7 @@ const Login = ({ signIn, signUp }) => {
         <input aria-label="Password" type="password" placeholder="12345" value={input.password} onInput={e => setInput({...input, password: e.target.value})}></input>
         
         <div className='btns'>
-          <button aria-label="Sign up" onClick={signUp(input.email, input.password)}>Sign up</button>
+          <button aria-label="Sign up" onClick={signUp(input.email, input.password)} disabled>Sign up</button>
           <button aria-label="Sign in" onClick={signIn(input.email, input.password)}>Sign in</button>
         </div>
       </div>
